@@ -1,0 +1,28 @@
+{
+  "packages": [
+    {
+      "id": "single",
+      "title": "Single Person Pack",
+      "price": 15,
+      "description": "Perfect for individuals seeking a complete iftar experience.",
+      "image": "/images/images1.jpeg",
+      "persons": 1
+    },
+    {
+      "id": "family",
+      "title": "Family Pack",
+      "price": 12,
+      "description": "Ideal for small families, with varied menu options.",
+      "image": "/images/images.jpeg",
+      "persons": 3
+    },
+    {
+      "id": "extended",
+      "title": "Extended Family Pack",
+      "price": 10,
+      "description": "Best value for larger families, with premium selections.",
+      "image": "/images/download.jpeg",
+      "persons": 5
+    }
+  ]
+} 
