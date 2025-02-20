@@ -5,8 +5,15 @@ import MealPackages from '../components/MealPackages';
 import Categories from '../components/Categories';
 import ProductGrid from '../components/ProductGrid';
 import Navbar from '../components/Navbar';
+import Popup from '@/components/pop-up/popup';
+import { useState } from 'react';
 
 const Home: NextPage = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false); // Close the popup when this function is called
+  };
   return (
     <>
       <Head>
@@ -21,6 +28,13 @@ const Home: NextPage = () => {
         <MealPackages />
         <Categories />
         <ProductGrid />
+        {isPopupOpen && <Popup onClose={handleClosePopup} />}
+        <button
+        onClick={() => setIsPopupOpen(true)} // Open the popup when clicked
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+      >
+        Open Popup
+      </button>
       </main>
     </>
   );
