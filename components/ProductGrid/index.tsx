@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import productsData from '@/data/products.json';
+import { useFilterStore } from '@/store/useFilterStore';
+import { useCartStore } from '@/store/useCartStore';
 
 const ProductGrid = () => {
-  const [category, setCategory] = useState('All');
+  const { category, setCategory } = useFilterStore();
+  const { addItem } = useCartStore();
   const [page, setPage] = useState(1);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 50]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -106,8 +109,21 @@ const ProductGrid = () => {
                     <h3 className="font-playfair text-xl font-bold mb-3 text-[#1a472a] group-hover:text-[#2c5545] transition-colors">{product.name}</h3>
                     <div className="flex justify-between items-center mb-4">
                       <span className="text-2xl font-bold text-[#1a472a]">${product.price}</span>
-                      <button className="bg-gradient-to-r from-[#1a472a] to-[#2c5545] text-white px-6 py-3 rounded-xl font-bold tracking-wide transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#1a472a]/30">
-                        Add to Cart
+                      <button 
+                        onClick={() => addItem({
+                          id: product.id,
+                          name: product.name,
+                          price: product.price,
+                          image: product.image
+                        })}
+                        className="bg-gradient-to-r from-[#1a472a] to-[#2c5545] text-white px-6 py-3 rounded-xl font-bold tracking-wide transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#1a472a]/30 group"
+                      >
+                        <span className="flex items-center gap-2">
+                          <span>Add to Cart</span>
+                          <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                          </svg>
+                        </span>
                       </button>
                     </div>
                     <div className="flex flex-wrap gap-2">
