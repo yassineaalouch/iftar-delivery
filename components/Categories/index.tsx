@@ -1,33 +1,40 @@
 import { useEffect } from 'react';
+import { useFilterStore } from '../../store/useFilterStore';
 
 const categories = [
   {
     id: 'traditional',
     title: 'Traditional Meals',
     icon: '🍲',
-    description: 'Authentic iftar dishes'
+    description: 'Authentic iftar dishes',
+    filterValue: 'Traditional'
   },
   {
     id: 'boulangerie',
     title: 'Boulangerie',
     icon: '🥖',
-    description: 'Fresh baked goods'
+    description: 'Fresh baked goods',
+    filterValue: 'Fast Food'
   },
   {
     id: 'fast-food',
     title: 'Fast Food',
     icon: '🍔',
-    description: 'Quick meal options'
+    description: 'Quick meal options',
+    filterValue: 'Fast Food'
   },
   {
     id: 'sweets',
     title: 'Drinks & Sweets',
     icon: '🍯',
-    description: 'Traditional desserts'
+    description: 'Traditional desserts',
+    filterValue: 'Sweets'
   }
 ];
 
 const Categories = () => {
+  const { setCategory } = useFilterStore();
+
   useEffect(() => {
     // Staggered animation on load
     const cards = document.querySelectorAll('.category-card');
@@ -46,7 +53,8 @@ const Categories = () => {
           {categories.map((category) => (
             <div
               key={category.id}
-              className="category-card min-w-[160px] text-center"
+              className="category-card min-w-[160px] text-center cursor-pointer hover:scale-105 transition-transform"
+              onClick={() => setCategory(category.filterValue || 'All')}
             >
               <span className="text-4xl mb-2">{category.icon}</span>
               <h3 className="font-medium mb-1">{category.title}</h3>

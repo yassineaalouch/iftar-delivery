@@ -79,6 +79,22 @@
       "image": "/images/products/hrira.jpeg",
       "category": "Traditional",
       "tags": ["soupe"]
+    },
+    {
+      "id": "11",
+      "name": "Tacos",
+      "price": 2,
+      "image": "/images/products/hrira.jpeg",
+      "category": "Fast Food",
+      "tags": ["soupe"]
+    },
+    {
+      "id": "12",
+      "name": "Pizza",
+      "price": 2,
+      "image": "/images/products/hrira.jpeg",
+      "category": "Fast Food",
+      "tags": ["soupe"]
     }
   ]
 } 

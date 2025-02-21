@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import productsData from '@/data/products.json';
+import { useFilterStore } from '@/store/useFilterStore';
+import { useCartStore } from '@/store/useCartStore';
 
 const ProductGrid = () => {
-  const [category, setCategory] = useState('All');
+  const { category, setCategory } = useFilterStore();
+  const { addItem } = useCartStore();
   const [page, setPage] = useState(1);
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 50]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -23,19 +26,19 @@ const ProductGrid = () => {
   );
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#1a472a]/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Filters Sidebar */}
-          <div className="w-full md:w-64 bg-white p-4 rounded-lg shadow-sm">
-            <h3 className="font-medium text-lg mb-4 text-primary">Filters</h3>
+          <div className="w-full md:w-64 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50">
+            <h3 className="font-playfair text-2xl mb-6 text-[#1a472a] font-bold">Filters</h3>
             
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Category</label>
+            <div className="mb-8">
+              <label className="block text-sm font-medium mb-3 text-[#2c5545]">Category</label>
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
+                className="w-full px-4 py-3 rounded-xl border border-[#1a472a]/20 focus:border-[#1a472a] focus:ring-2 focus:ring-[#1a472a]/20 bg-white/50 backdrop-blur-sm"
               >
                 <option value="All">All Categories</option>
                 <option value="Traditional">Traditional</option>
@@ -44,32 +47,32 @@ const ProductGrid = () => {
               </select>
             </div>
             
-            <div className="mb-6">
-              <label className="block text-sm font-medium mb-2">Price Range</label>
-              <div className="flex items-center gap-2">
+            <div className="mb-8">
+              <label className="block text-sm font-medium mb-3 text-[#2c5545]">Price Range</label>
+              <div className="flex items-center gap-3">
                 <input
                   type="number"
                   value={priceRange[0]}
                   onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                  className="w-20 px-2 py-1 border rounded"
+                  className="w-24 px-3 py-2 border border-[#1a472a]/20 rounded-lg bg-white/50"
                   min="0"
                 />
-                <span>-</span>
+                <span className="text-[#2c5545]">-</span>
                 <input
                   type="number"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                  className="w-20 px-2 py-1 border rounded"
+                  className="w-24 px-3 py-2 border border-[#1a472a]/20 rounded-lg bg-white/50"
                   min="0"
                 />
               </div>
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">Tags</label>
-              <div className="space-y-2">
+              <label className="block text-sm font-medium mb-3 text-[#2c5545]">Tags</label>
+              <div className="space-y-3">
                 {Array.from(new Set(products.flatMap(p => p.tags))).map(tag => (
-                  <label key={tag} className="flex items-center gap-2">
+                  <label key={tag} className="flex items-center gap-3 cursor-pointer group">
                     <input
                       type="checkbox"
                       checked={selectedTags.includes(tag)}
@@ -80,9 +83,9 @@ const ProductGrid = () => {
                           setSelectedTags(selectedTags.filter(t => t !== tag));
                         }
                       }}
-                      className="rounded text-primary"
+                      className="rounded text-[#1a472a] border-[#1a472a]/20"
                     />
-                    {tag}
+                    <span className="text-[#2c5545] group-hover:text-[#1a472a] transition-colors">{tag}</span>
                   </label>
                 ))}
               </div>
@@ -91,28 +94,45 @@ const ProductGrid = () => {
 
           {/* Products Grid */}
           <div className="flex-1">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {currentProducts.map((product) => (
-                <div key={product.id} className="product-card">
-                  <div className="relative h-40">
+                <div key={product.id} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+                  <div className="relative h-48">
                     <Image
                       src={product.image}
                       alt={product.name}
                       fill
-                      className="object-cover"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <div className="p-3">
-                    <h3 className="font-medium mb-2 text-[#0f2b1a]">{product.name}</h3>
-                    <div className="flex justify-between items-center">
-                      <span className="text-lg font-semibold text-[#0f2b1a]">${product.price}</span>
-                      <button className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90">
-                        Add to Cart
+                  <div className="p-6">
+                    <h3 className="font-playfair text-xl font-bold mb-3 text-[#1a472a] group-hover:text-[#2c5545] transition-colors">{product.name}</h3>
+                    <div className="flex justify-between items-center mb-4">
+                      <span className="text-2xl font-bold text-[#1a472a]">${product.price}</span>
+                      <button 
+                        onClick={() => addItem({
+                          id: product.id,
+                          name: product.name,
+                          price: product.price,
+                          image: product.image
+                        })}
+                        className="bg-gradient-to-r from-[#1a472a] to-[#2c5545] text-white px-6 py-3 rounded-xl font-bold tracking-wide transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#1a472a]/30 group"
+                      >
+                        <span className="flex items-center gap-2">
+                          <span>Add to Cart</span>
+                          <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                          </svg>
+                        </span>
                       </button>
                     </div>
-                    <div className="mt-2 flex gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {product.tags.map((tag) => (
-                        <span key={tag} className="text-xs bg-[#0f2b1a] px-2 py-1 rounded text-white">
+                        <span key={tag} className="inline-flex items-center gap-1.5 text-sm bg-[#1a472a]/10 text-[#1a472a] px-3 py-1.5 rounded-full">
+                          {tag === 'Spicy' && '🌶️'}
+                          {tag === 'Vegetarian' && '🥬'}
+                          {tag === 'Halal' && '🥩'}
+                          {tag === 'Sweet' && '🍯'}
                           {tag}
                         </span>
                       ))}
@@ -123,11 +143,11 @@ const ProductGrid = () => {
             </div>
 
             {/* Pagination */}
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-3 mt-8">
               <button
                 onClick={() => setPage(p => Math.max(1, p - 1))}
                 disabled={page === 1}
-                className="px-4 py-2 rounded-lg border disabled:opacity-50"
+                className="px-5 py-2.5 rounded-xl border border-[#1a472a]/20 text-[#1a472a] disabled:opacity-50 hover:bg-[#1a472a]/5 transition-colors"
               >
                 Previous
               </button>
@@ -135,9 +155,11 @@ const ProductGrid = () => {
                 <button
                   key={i}
                   onClick={() => setPage(i + 1)}
-                  className={`px-4 py-2 rounded-lg border ${
-                    page === i + 1 ? 'bg-primary text-[#0f2b1a]' : ''
-                  }`}
+                  className={`px-5 py-2.5 rounded-xl border ${
+                    page === i + 1 
+                      ? 'bg-[#1a472a] text-white border-[#1a472a]' 
+                      : 'border-[#1a472a]/20 text-[#1a472a] hover:bg-[#1a472a]/5'
+                  } transition-colors`}
                 >
                   {i + 1}
                 </button>
@@ -145,7 +167,7 @@ const ProductGrid = () => {
               <button
                 onClick={() => setPage(p => Math.min(pageCount, p + 1))}
                 disabled={page === pageCount}
-                className="px-4 py-2 rounded-lg border disabled:opacity-50"
+                className="px-5 py-2.5 rounded-xl border border-[#1a472a]/20 text-[#1a472a] disabled:opacity-50 hover:bg-[#1a472a]/5 transition-colors"
               >
                 Next
               </button>
@@ -157,4 +179,4 @@ const ProductGrid = () => {
   );
 };
 
-export default ProductGrid; 
+export default ProductGrid;

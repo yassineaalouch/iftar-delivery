@@ -1,0 +1,233 @@
+[
+  {
+    "id": "order_1740096737310",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:12"
+    },
+    "items": [
+      {
+        "id": "2",
+        "name": "Briwat",
+        "price": 5,
+        "image": "/images/products/briwat.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "3",
+        "name": "Chebakia",
+        "price": 1,
+        "image": "/images/products/chebakia.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 6,
+    "orderDate": "2025-02-21T00:12:16.636Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740096775806",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:12"
+    },
+    "items": [
+      {
+        "id": "5",
+        "name": "hrira",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "3",
+        "name": "Chebakia",
+        "price": 1,
+        "image": "/images/products/chebakia.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "2",
+        "name": "Briwat",
+        "price": 5,
+        "image": "/images/products/briwat.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "1",
+        "name": "Beghrir",
+        "price": 4,
+        "image": "/images/products/beghrir.jpeg",
+        "quantity": 7
+      }
+    ],
+    "totalPrice": 36,
+    "orderDate": "2025-02-21T00:12:55.781Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740096929232",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:15"
+    },
+    "items": [
+      {
+        "id": "4",
+        "name": "hrira",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "3",
+        "name": "Chebakia",
+        "price": 1,
+        "image": "/images/products/chebakia.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "2",
+        "name": "Briwat",
+        "price": 5,
+        "image": "/images/products/briwat.jpeg",
+        "quantity": 3
+      },
+      {
+        "id": "1",
+        "name": "Beghrir",
+        "price": 4,
+        "image": "/images/products/beghrir.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 22,
+    "orderDate": "2025-02-21T00:15:28.966Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740097380833",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:22"
+    },
+    "items": [
+      {
+        "id": "3",
+        "name": "Chebakia",
+        "price": 1,
+        "image": "/images/products/chebakia.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 1,
+    "orderDate": "2025-02-21T00:23:00.652Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740097406880",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:23"
+    },
+    "items": [
+      {
+        "id": "1",
+        "name": "Beghrir",
+        "price": 4,
+        "image": "/images/products/beghrir.jpeg",
+        "quantity": 4
+      },
+      {
+        "id": "2",
+        "name": "Briwat",
+        "price": 5,
+        "image": "/images/products/briwat.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 21,
+    "orderDate": "2025-02-21T00:23:26.852Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740097456741",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:24"
+    },
+    "items": [
+      {
+        "id": "11",
+        "name": "Tacos",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 4,
+    "orderDate": "2025-02-21T00:24:16.726Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1740097491665",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliveryTime": "2025-02-21T00:24"
+    },
+    "items": [
+      {
+        "id": "1",
+        "name": "Beghrir",
+        "price": 4,
+        "image": "/images/products/beghrir.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "12",
+        "name": "Pizza",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "11",
+        "name": "Tacos",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "10",
+        "name": "hrira",
+        "price": 2,
+        "image": "/images/products/hrira.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 10,
+    "orderDate": "2025-02-21T00:24:51.647Z",
+    "status": "pending"
+  }
+]
