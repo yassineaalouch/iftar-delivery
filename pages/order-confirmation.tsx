@@ -17,7 +17,7 @@ const OrderConfirmation: NextPage = () => {
             Order Confirmed!
           </h1>
           <p className="text-[#2c5545] mb-8">
-            Thank you for your order. We'll deliver your iftar at your specified time.
+            Thank you for your order. We will deliver your iftar at your specified time.
           </p>
           <button
             onClick={() => router.push('/')}

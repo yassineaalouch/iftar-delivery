@@ -1092,5 +1092,34 @@
     "totalPrice": 30,
     "orderDate": "2025-02-22T19:30:06.335Z",
     "status": "pending"
+  },
+  {
+    "id": "order_1740258326273",
+    "customerInfo": {
+      "name": "soundous saadeddine",
+      "email": "soundoussaadeddine16@gmail.com",
+      "phone": "0612711750",
+      "address": "derb foukara rue 30 n 113 casablanca",
+      "deliverySlot": "17:00"
+    },
+    "items": [
+      {
+        "id": "1",
+        "name": "Beghrir",
+        "price": 4,
+        "image": "/images/products/beghrir.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "2",
+        "name": "Briwat",
+        "price": 5,
+        "image": "/images/products/briwat.jpeg",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 9,
+    "orderDate": "2025-02-22T21:05:26.113Z",
+    "status": "pending"
   }
 ]
