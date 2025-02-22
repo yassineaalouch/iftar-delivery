@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import packagesData from '@/data/packages.json';
+import PackagePopup from '../PackagePopup';
 
 interface Package {
   id: string;
@@ -11,10 +12,15 @@ interface Package {
   persons: number;
 }
 
+interface PackageInfo {
+  id: string;
+  persons: number;
+}
+
 const MealPackages = () => {
-  const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
-  console.log(selectedPackage);
-  const packages = packagesData.packages;
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState<PackageInfo | null>(null);
+  const packages: Package[] = packagesData.packages;
 
   return (
     <section className="py-20 bg-[#1a472a]/10">
@@ -55,7 +61,14 @@ const MealPackages = () => {
                 {pkg.description}
               </p>
               <button
-                onClick={() => setSelectedPackage(pkg)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedPackage({
+                    id: pkg.id,
+                    persons: pkg.persons
+                  });
+                  setIsPopupOpen(true);
+                }}
                 className="w-full bg-[#1a472a] text-white py-3 rounded-xl
                            font-bold tracking-wide
                            transition-all duration-300
@@ -66,7 +79,7 @@ const MealPackages = () => {
                            flex items-center justify-center gap-2
                            group-hover:bg-gradient-to-r from-[#1a472a] to-[#2c5545]"
               >
-                <span>Customize Package</span>
+                <span>Customize Package ({pkg.persons} persons)</span>
                 <svg 
                   className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
                   fill="none" 
@@ -79,6 +92,14 @@ const MealPackages = () => {
             </div>
           ))}
         </div>
+        <PackagePopup 
+          isOpen={isPopupOpen}
+          onClose={() => {
+            setIsPopupOpen(false);
+            setSelectedPackage(null);
+          }}
+          packageInfo={selectedPackage}
+        />
       </div>
     </section>
   );

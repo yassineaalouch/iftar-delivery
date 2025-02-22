@@ -2,7 +2,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  ].filter(Boolean),
   theme: {
     extend: {
       colors: {
@@ -49,3 +49,6 @@ module.exports = {
   },
   plugins: [],
 } 
+// Add TypeScript support if needed (at top of file)
+// @ts-check
+/** @type {import('tailwindcss').Config} */

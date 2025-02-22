@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Hero = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#1a472a] via-[#2c5545] to-[#8a6240] flex items-center relative overflow-hidden">
@@ -35,17 +37,9 @@ const Hero = () => {
                          hover:bg-gradient-to-l transition-all transform hover:scale-105 duration-300 
                          shadow-[0_0_20px_rgba(218,159,56,0.3)] hover:shadow-[0_0_30px_rgba(218,159,56,0.5)]
                          flex items-center gap-4 mx-auto group">
-          <img 
-            src="https://img.icons8.com/?size=100&id=RcOKEIh3aJYb&format=png&color=000000" 
-            className="w-7 h-7 group-hover:rotate-12 transition-transform duration-500" 
-            alt="Date" 
-          />
+          
           <span className="tracking-wide">Commander mn 3ndna daba</span>
-          <img 
-            src="https://img.icons8.com/?size=100&id=RcOKEIh3aJYb&format=png&color=000000" 
-            className="w-7 h-7 group-hover:-rotate-12 transition-transform duration-500" 
-            alt="Date" 
-          />
+          
         </button>
 
         {/* Animated Floating Lanterns */}
@@ -64,10 +58,11 @@ const Hero = () => {
           />
         </div>
         <div className="absolute left-[20%] bottom-1/4 animate-float-lantern-3">
-          <img 
+          <Image 
             src="/images/hero/lantern.png" 
             className="w-14 opacity-70 drop-shadow-[0_0_10px_rgba(255,215,0,0.3)]" 
             alt="Lantern" 
+            fill
           />
         </div>
       </div>

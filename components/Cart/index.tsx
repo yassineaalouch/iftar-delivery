@@ -117,8 +117,8 @@ const Cart = () => {
                         <Image
                           src={item.image}
                           alt={item.name}
-                          fill
                           className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          fill
                         />
                       </div>
                       <div className="flex-1">

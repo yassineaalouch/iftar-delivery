@@ -54,8 +54,8 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
                     <Image
                       src={item.image}
                       alt={item.name}
-                      fill
                       className="object-cover rounded-md"
+                      fill
                     />
                   </div>
                   <div className="flex-1">
