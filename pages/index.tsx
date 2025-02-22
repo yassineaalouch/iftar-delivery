@@ -19,7 +19,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Ramadan Iftar Delivery</title>
         <meta name="description" content="Daily Iftar meals delivered to your doorstep" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
       <main className="min-h-screen">

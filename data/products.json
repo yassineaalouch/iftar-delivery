@@ -1,84 +1,45 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": "prod_2",
+      "name": "Hrira",
+      "price": 3,
+      "image": "/images/products/hrira.jpeg",
+      "category": "Soup",
+      "tags": [
+        "Hot",
+        "Traditional"
+      ]
+    },
+    {
+      "id": "prod_4",
       "name": "Beghrir",
-      "price": 4,
+      "price": 2,
       "image": "/images/products/beghrir.jpeg",
-      "category": "Traditional",
-      "tags": ["Ajina"]
+      "category": "Baked",
+      "tags": [
+        "Traditional",
+        "Sweet"
+      ]
     },
     {
-      "id": "2",
-      "name": "Briwat",
-      "price": 5,
-      "image": "/images/products/briwat.jpeg",
-      "category": "Traditional",
-      "tags": ["hochwa"]
-    },
-    {
-      "id": "3",
+      "id": "prod_5",
       "name": "Chebakia",
       "price": 1,
       "image": "/images/products/chebakia.jpeg",
-      "category": "Traditional",
-      "tags": ["halawiya"]
+      "category": "Sweet",
+      "tags": [
+        "Traditional",
+        "Sweet"
+      ]
     },
     {
-      "id": "4",
-      "name": "hrira",
+      "id": "prod_1740260995323",
+      "name": "briwat",
       "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "5",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "6",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "7",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "8",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "9",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
-    },
-    {
-      "id": "10",
-      "name": "hrira",
-      "price": 2,
-      "image": "/images/products/hrira.jpeg",
-      "category": "Traditional",
-      "tags": ["soupe"]
+      "image": "/images/products/briwat.jpeg",
+      "category": "Baked",
+      "tags": []
     }
   ]
-} 
+}
