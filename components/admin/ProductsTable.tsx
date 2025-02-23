@@ -7,6 +7,7 @@ interface Product {
   price: number;
   image: string;
   category: string;
+  tags: string[];
 }
 
 const ProductsTable = () => {
