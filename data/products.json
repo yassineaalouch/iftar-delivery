@@ -5,10 +5,11 @@
       "name": "Hrira",
       "price": 3,
       "image": "/images/products/hrira.jpeg",
-      "category": "Soup",
+      "category": "Traditional",
       "tags": [
         "Hot",
-        "Traditional"
+        "Chaud",
+        "Popular"
       ]
     },
     {
@@ -16,10 +17,9 @@
       "name": "Beghrir",
       "price": 2,
       "image": "/images/products/beghrir.jpeg",
-      "category": "Baked",
+      "category": "Traditional",
       "tags": [
-        "Traditional",
-        "Sweet"
+        "Popular"
       ]
     },
     {
@@ -27,10 +27,11 @@
       "name": "Chebakia",
       "price": 1,
       "image": "/images/products/chebakia.jpeg",
-      "category": "Sweet",
+      "category": "Traditional",
       "tags": [
-        "Traditional",
-        "Sweet"
+        "Sweet",
+        "Sucré",
+        "Popular"
       ]
     },
     {
@@ -38,8 +39,38 @@
       "name": "briwat",
       "price": 2,
       "image": "/images/products/briwat.jpeg",
-      "category": "Baked",
-      "tags": []
+      "category": "Traditional",
+      "tags": [
+        "hechwa",
+        "salé"
+      ]
+    },
+    {
+      "id": "prod_1740262483595",
+      "name": "coffee",
+      "price": 10,
+      "image": "/images/products/coffee.png",
+      "category": "Drinks",
+      "tags": [
+        "Hot",
+        "Popular",
+        "Chaud"
+      ]
+    },
+    {
+      "id": "prod_1740268522692",
+      "name": "test",
+      "price": 12,
+      "image": "/images/products/hrira.jpeg",
+      "category": "Traditional",
+      "tags": [
+        "Chaud",
+        "Popular"
+      ],
+      "fournisseur": "fournisseur 1",
+      "prixUnitaire": 6,
+      "rating": 4,
+      "commentaire": "good"
     }
   ]
 }

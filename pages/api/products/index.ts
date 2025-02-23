@@ -7,6 +7,10 @@ const productsFile = path.join(process.cwd(), 'data', 'products.json');
 interface Product {
   id: string;
   name: string;
+  fournisseur: string;
+  prixUnitaire: number;
+  rating: number;
+  commentaire: string;
   price: number;
   image: string;
   category: string;
@@ -33,8 +37,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         const newProduct: Product = {
           id: `prod_${Date.now()}`,
           name: req.body.name,
-          price: Number(req.body.price),
+          fournisseur: req.body.fournisseur,
+          prixUnitaire: Number(req.body.prixUnitaire),
+          rating: Number(req.body.rating),
+          commentaire: req.body.commentaire,
           image: req.body.image,
+          price: Number(req.body.price),
           category: req.body.category,
           tags: req.body.tags || []
         };

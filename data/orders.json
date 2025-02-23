@@ -1,1125 +1,1127 @@
-[
-  {
-    "id": "order_1740096737310",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:12"
+{
+  "orders": [
+    {
+      "id": "order_1740096737310",
+      "customerInfo": {
+        "name": "saad saif",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:12"
+      },
+      "items": [
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 6,
+      "orderDate": "2025-02-21T00:12:16.636Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740096775806",
+      "customerInfo": {
+        "name": "saif saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:12"
       },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 6,
-    "orderDate": "2025-02-21T00:12:16.636Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740096775806",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:12"
+      "items": [
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 7
+        }
+      ],
+      "totalPrice": 36,
+      "orderDate": "2025-02-21T00:12:55.781Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740096929232",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:15"
       },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 7
-      }
-    ],
-    "totalPrice": 36,
-    "orderDate": "2025-02-21T00:12:55.781Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740096929232",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:15"
+      "items": [
+        {
+          "id": "4",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 22,
+      "orderDate": "2025-02-21T00:15:28.966Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "4",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740097380833",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:22"
       },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 3
-      },
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 22,
-    "orderDate": "2025-02-21T00:15:28.966Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740097380833",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:22"
+      "items": [
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 1,
+      "orderDate": "2025-02-21T00:23:00.652Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 1,
-    "orderDate": "2025-02-21T00:23:00.652Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740097406880",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:23"
+    {
+      "id": "order_1740097406880",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:23"
+      },
+      "items": [
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 4
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 21,
+      "orderDate": "2025-02-21T00:23:26.852Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 4
+    {
+      "id": "order_1740097456741",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:24"
       },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 21,
-    "orderDate": "2025-02-21T00:23:26.852Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740097456741",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:24"
+      "items": [
+        {
+          "id": "11",
+          "name": "Tacos",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 4,
+      "orderDate": "2025-02-21T00:24:16.726Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "11",
-        "name": "Tacos",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 2
-      }
-    ],
-    "totalPrice": 4,
-    "orderDate": "2025-02-21T00:24:16.726Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740097491665",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:24"
+    {
+      "id": "order_1740097491665",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:24"
+      },
+      "items": [
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "12",
+          "name": "Pizza",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "11",
+          "name": "Tacos",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 10,
+      "orderDate": "2025-02-21T00:24:51.647Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740097866678",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T00:30"
       },
-      {
-        "id": "12",
-        "name": "Pizza",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "11",
-        "name": "Tacos",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "10",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 10,
-    "orderDate": "2025-02-21T00:24:51.647Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740097866678",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T00:30"
+      "items": [
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 2
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 11,
+      "orderDate": "2025-02-21T00:31:06.499Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 2
+    {
+      "id": "order_1740179326084",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T23:08"
       },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 11,
-    "orderDate": "2025-02-21T00:31:06.499Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740179326084",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T23:08"
+      "items": [
+        {
+          "id": "tea",
+          "name": "Moroccan Tea",
+          "price": 2,
+          "image": "/images/products/tea.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hrira",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "beghrir",
+          "name": "Beghrir",
+          "price": 2,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "chebakia",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 8,
+      "orderDate": "2025-02-21T23:08:44.281Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "tea",
-        "name": "Moroccan Tea",
-        "price": 2,
-        "image": "/images/products/tea.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740180413418",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T23:26"
       },
-      {
-        "id": "hrira",
-        "name": "Hrira",
-        "price": 3,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "beghrir",
-        "name": "Beghrir",
-        "price": 2,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "chebakia",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 8,
-    "orderDate": "2025-02-21T23:08:44.281Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740180413418",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T23:26"
+      "items": [
+        {
+          "id": "tea",
+          "name": "Moroccan Tea",
+          "price": 2,
+          "image": "/images/products/tea.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hrira",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hsoua",
+          "name": "Hsoua",
+          "price": 3,
+          "image": "/images/products/hsoua.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "msemen",
+          "name": "Msemen",
+          "price": 2,
+          "image": "/images/products/msemen.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "beghrir",
+          "name": "Beghrir",
+          "price": 2,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "chebakia",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "briwat",
+          "name": "Briwat",
+          "price": 1,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 2
+        },
+        {
+          "id": "4",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 29,
+      "orderDate": "2025-02-21T23:26:51.881Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "tea",
-        "name": "Moroccan Tea",
-        "price": 2,
-        "image": "/images/products/tea.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740180476647",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-21T23:27"
       },
-      {
-        "id": "hrira",
-        "name": "Hrira",
-        "price": 3,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "hsoua",
-        "name": "Hsoua",
-        "price": 3,
-        "image": "/images/products/hsoua.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "msemen",
-        "name": "Msemen",
-        "price": 2,
-        "image": "/images/products/msemen.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "beghrir",
-        "name": "Beghrir",
-        "price": 2,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "chebakia",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "briwat",
-        "name": "Briwat",
-        "price": 1,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 2
-      },
-      {
-        "id": "4",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 29,
-    "orderDate": "2025-02-21T23:26:51.881Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740180476647",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-21T23:27"
+      "items": [
+        {
+          "id": "tea",
+          "name": "Moroccan Tea",
+          "price": 2,
+          "image": "/images/products/tea.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hrira",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "beghrir",
+          "name": "Beghrir",
+          "price": 2,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "chebakia",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 8,
+      "orderDate": "2025-02-21T23:27:56.568Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "tea",
-        "name": "Moroccan Tea",
-        "price": 2,
-        "image": "/images/products/tea.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740234981558",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T14:36"
       },
-      {
-        "id": "hrira",
-        "name": "Hrira",
-        "price": 3,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "beghrir",
-        "name": "Beghrir",
-        "price": 2,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "chebakia",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 8,
-    "orderDate": "2025-02-21T23:27:56.568Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740234981558",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T14:36"
+      "items": [
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 10,
+      "orderDate": "2025-02-22T14:36:21.493Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740235150111",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T14:39"
       },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 10,
-    "orderDate": "2025-02-22T14:36:21.493Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740235150111",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T14:39"
+      "items": [
+        {
+          "id": "tea",
+          "name": "Moroccan Tea",
+          "price": 2,
+          "image": "/images/products/tea.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hrira",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "msemen",
+          "name": "Msemen",
+          "price": 2,
+          "image": "/images/products/msemen.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "chebakia",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 8,
+      "orderDate": "2025-02-22T14:39:09.777Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "tea",
-        "name": "Moroccan Tea",
-        "price": 2,
-        "image": "/images/products/tea.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740235278485",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T14:41"
       },
-      {
-        "id": "hrira",
-        "name": "Hrira",
-        "price": 3,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "msemen",
-        "name": "Msemen",
-        "price": 2,
-        "image": "/images/products/msemen.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "chebakia",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 8,
-    "orderDate": "2025-02-22T14:39:09.777Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740235278485",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T14:41"
+      "items": [
+        {
+          "id": "tea",
+          "name": "Moroccan Tea",
+          "price": 2,
+          "image": "/images/products/tea.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "hrira",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "msemen",
+          "name": "Msemen",
+          "price": 2,
+          "image": "/images/products/msemen.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "chebakia",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 12,
+      "orderDate": "2025-02-22T14:41:18.184Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "tea",
-        "name": "Moroccan Tea",
-        "price": 2,
-        "image": "/images/products/tea.jpeg",
-        "quantity": 1
+    {
+      "id": "order_1740239522198",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T16:51"
       },
-      {
-        "id": "hrira",
-        "name": "Hrira",
-        "price": 3,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "msemen",
-        "name": "Msemen",
-        "price": 2,
-        "image": "/images/products/msemen.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "chebakia",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "6",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 12,
-    "orderDate": "2025-02-22T14:41:18.184Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740239522198",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T16:51"
+      "items": [
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 5,
+      "orderDate": "2025-02-22T15:52:01.098Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 5,
-    "orderDate": "2025-02-22T15:52:01.098Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740240030674",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T17:00"
+    {
+      "id": "order_1740240030674",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T17:00"
+      },
+      "items": [
+        {
+          "id": "package_1740239996135",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 1,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "msemen",
+              "name": "Msemen",
+              "quantity": 1
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "4",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 16,
+      "orderDate": "2025-02-22T16:00:29.657Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740239996135",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 1,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "msemen",
-            "name": "Msemen",
-            "quantity": 1
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740240190644",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-23T17:03"
       },
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "4",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 16,
-    "orderDate": "2025-02-22T16:00:29.657Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740240190644",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-23T17:03"
+      "items": [
+        {
+          "id": "package_1740240143035",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 1,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 1
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9,
+      "orderDate": "2025-02-22T16:03:09.855Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740240143035",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 1,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 1
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740242141937",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-23T17:35"
       },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 9,
-    "orderDate": "2025-02-22T16:03:09.855Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740242141937",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-23T17:35"
+      "items": [
+        {
+          "id": "package_1740242114679",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 2,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 1
+            },
+            {
+              "id": "briwat",
+              "name": "Briwat",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 3
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 3
+        }
+      ],
+      "totalPrice": 34,
+      "orderDate": "2025-02-22T16:35:40.328Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740242114679",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 2,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 1
-          },
-          {
-            "id": "briwat",
-            "name": "Briwat",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740242895984",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-23T17:48"
       },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 3
-      },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 3
-      }
-    ],
-    "totalPrice": 34,
-    "orderDate": "2025-02-22T16:35:40.328Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740242895984",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-23T17:48"
+      "items": [
+        {
+          "id": "package_1740242862645",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 2,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "msemen",
+              "name": "Msemen",
+              "quantity": 1
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 22,
+      "orderDate": "2025-02-22T16:48:14.264Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740242862645",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 2,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "msemen",
-            "name": "Msemen",
-            "quantity": 1
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740243218962",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-23T17:53"
       },
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 22,
-    "orderDate": "2025-02-22T16:48:14.264Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740243218962",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-23T17:53"
+      "items": [
+        {
+          "id": "package_1740243135157",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 1,
+          "image": "/images/products/coffee.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "coffee",
+              "name": "Coffee",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "msemen",
+              "name": "Msemen",
+              "quantity": 1
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "package_1740243171112",
+          "name": "5 Person Package",
+          "price": 40,
+          "quantity": 1,
+          "image": "/images/products/coffee.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "coffee",
+              "name": "Coffee",
+              "quantity": 1
+            },
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 4
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 5
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 5
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 5
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 50,
+      "orderDate": "2025-02-22T16:53:37.998Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740243135157",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 1,
-        "image": "/images/products/coffee.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "coffee",
-            "name": "Coffee",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "msemen",
-            "name": "Msemen",
-            "quantity": 1
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740243724688",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-22T18:01"
       },
-      {
-        "id": "package_1740243171112",
-        "name": "5 Person Package",
-        "price": 40,
-        "quantity": 1,
-        "image": "/images/products/coffee.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "coffee",
-            "name": "Coffee",
-            "quantity": 1
-          },
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 4
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 5
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 5
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 5
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 50,
-    "orderDate": "2025-02-22T16:53:37.998Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740243724688",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-22T18:01"
+      "items": [
+        {
+          "id": "package_1740243710712",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 1,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 1
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 1
+            }
+          ]
+        }
+      ],
+      "totalPrice": 8,
+      "orderDate": "2025-02-22T17:02:02.303Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740243710712",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 1,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 1
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 1
-          }
-        ]
-      }
-    ],
-    "totalPrice": 8,
-    "orderDate": "2025-02-22T17:02:02.303Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740252422718",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-23T20:26"
+    {
+      "id": "order_1740252422718",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-23T20:26"
+      },
+      "items": [
+        {
+          "id": "package_1740252405005",
+          "name": "1 Person Package",
+          "price": 8,
+          "quantity": 1,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 1
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 1
+            },
+            {
+              "id": "briwat",
+              "name": "Briwat",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "hrira",
+          "price": 2,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 16,
+      "orderDate": "2025-02-22T19:27:02.095Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740252405005",
-        "name": "1 Person Package",
-        "price": 8,
-        "quantity": 1,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 1
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 1
-          },
-          {
-            "id": "briwat",
-            "name": "Briwat",
-            "quantity": 1
-          }
-        ]
+    {
+      "id": "order_1740252606645",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliveryTime": "2025-02-27T20:30"
       },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "6",
-        "name": "hrira",
-        "price": 2,
-        "image": "/images/products/hrira.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 16,
-    "orderDate": "2025-02-22T19:27:02.095Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740252606645",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliveryTime": "2025-02-27T20:30"
+      "items": [
+        {
+          "id": "package_1740252593474",
+          "name": "3 Person Package",
+          "price": 24,
+          "quantity": 1,
+          "image": "/images/products/tea.jpeg",
+          "isPackage": true,
+          "packageItems": [
+            {
+              "id": "tea",
+              "name": "Moroccan Tea",
+              "quantity": 2
+            },
+            {
+              "id": "coffee",
+              "name": "Coffee",
+              "quantity": 1
+            },
+            {
+              "id": "hrira",
+              "name": "Hrira",
+              "quantity": 3
+            },
+            {
+              "id": "beghrir",
+              "name": "Beghrir",
+              "quantity": 3
+            },
+            {
+              "id": "chebakia",
+              "name": "Chebakia",
+              "quantity": 3
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 30,
+      "orderDate": "2025-02-22T19:30:06.335Z",
+      "status": "pending"
     },
-    "items": [
-      {
-        "id": "package_1740252593474",
-        "name": "3 Person Package",
-        "price": 24,
-        "quantity": 1,
-        "image": "/images/products/tea.jpeg",
-        "isPackage": true,
-        "packageItems": [
-          {
-            "id": "tea",
-            "name": "Moroccan Tea",
-            "quantity": 2
-          },
-          {
-            "id": "coffee",
-            "name": "Coffee",
-            "quantity": 1
-          },
-          {
-            "id": "hrira",
-            "name": "Hrira",
-            "quantity": 3
-          },
-          {
-            "id": "beghrir",
-            "name": "Beghrir",
-            "quantity": 3
-          },
-          {
-            "id": "chebakia",
-            "name": "Chebakia",
-            "quantity": 3
-          }
-        ]
+    {
+      "id": "order_1740258326273",
+      "customerInfo": {
+        "name": "soundous saadeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliverySlot": "17:00"
       },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "3",
-        "name": "Chebakia",
-        "price": 1,
-        "image": "/images/products/chebakia.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 30,
-    "orderDate": "2025-02-22T19:30:06.335Z",
-    "status": "pending"
-  },
-  {
-    "id": "order_1740258326273",
-    "customerInfo": {
-      "name": "soundous saadeddine",
-      "email": "soundoussaadeddine16@gmail.com",
-      "phone": "0612711750",
-      "address": "derb foukara rue 30 n 113 casablanca",
-      "deliverySlot": "17:00"
-    },
-    "items": [
-      {
-        "id": "1",
-        "name": "Beghrir",
-        "price": 4,
-        "image": "/images/products/beghrir.jpeg",
-        "quantity": 1
-      },
-      {
-        "id": "2",
-        "name": "Briwat",
-        "price": 5,
-        "image": "/images/products/briwat.jpeg",
-        "quantity": 1
-      }
-    ],
-    "totalPrice": 9,
-    "orderDate": "2025-02-22T21:05:26.113Z",
-    "status": "pending"
-  }
-]
+      "items": [
+        {
+          "id": "1",
+          "name": "Beghrir",
+          "price": 4,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Briwat",
+          "price": 5,
+          "image": "/images/products/briwat.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9,
+      "orderDate": "2025-02-22T21:05:26.113Z",
+      "status": "pending"
+    }
+  ]
+}
