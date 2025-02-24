@@ -46,20 +46,12 @@ const Categories = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white rounded-b-[20%]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-playfair text-center mb-12 text-neutral">Browse Categories</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto overflow-x-auto md:overflow-visible">
           {categories.map((category) => (
-            <div
-              key={category.id}
-              className="category-card min-w-[160px] text-center cursor-pointer hover:scale-105 transition-transform"
-              onClick={() => setCategory(category.filterValue || 'All')}
-            >
-              <span className="text-4xl mb-2">{category.icon}</span>
-              <h3 className="font-medium mb-1">{category.title}</h3>
-              <p className="text-sm text-gray-600">{category.description}</p>
-            </div>
+            <CategoryCard key={category.id} category={category} />
           ))}
         </div>
       </div>
@@ -68,3 +60,20 @@ const Categories = () => {
 };
 
 export default Categories; 
+
+function CategoryCard({ category }: { category: (typeof categories)[0] }) {
+  const { setCategory } = useFilterStore();
+
+  return (
+    <div
+      className="category-card bg-white p-4 rounded-lg shadow-md cursor-pointer transition-transform duration-300 hover:scale-105"
+      onClick={() => setCategory(category.filterValue)}
+    >
+      <div className="flex flex-col items-center justify-center">
+        <div className="text-4xl mb-2">{category.icon}</div>
+        <h3 className="text-lg font-semibold text-center text-neutral">{category.title}</h3>
+        <p className="text-sm text-center text-neutral/70">{category.description}</p>
+      </div>
+    </div>
+  );
+}

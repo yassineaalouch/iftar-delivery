@@ -2,25 +2,79 @@
   "packages": [
     {
       "id": "single",
-      "title": "Single Person Pack",
+      "title": "1 Person Pack",
       "price": 15,
       "description": "Perfect for individuals seeking a complete iftar experience.",
+      "elements": [
+        {
+          "name": "soup",
+          "number": 1
+        },
+        {
+          "name": "main dish",
+          "number": 1
+        },
+        {
+          "name": "salad",
+          "number": 1
+        },
+        {
+          "name": "dessert",
+          "number": 1
+        }
+      ],
       "image": "/images/images1.jpeg",
       "persons": 1
     },
     {
       "id": "family",
-      "title": "Family Pack",
+      "title": "3 persons Pack",
       "price": 12,
       "description": "Ideal for small families, with varied menu options.",
+      "elements": [
+        {
+          "name": "soup",
+          "number": 3
+        },
+        {
+          "name": "main dish",
+          "number": 3
+        },
+        {
+          "name": "salad",
+          "number": 3
+        },
+        {
+          "name": "dessert",
+          "number": 3
+        }
+      ],
       "image": "/images/images.jpeg",
       "persons": 3
     },
     {
       "id": "extended",
-      "title": "Extended Family Pack",
+      "title": "5 person Pack",
       "price": 10,
       "description": "Best value for larger families, with premium selections.",
+      "elements": [
+        {
+          "name": "soup",
+          "number": 5
+        },
+        {
+          "name": "main dish",
+          "number": 5
+        },
+        {
+          "name": "salad",
+          "number": 5
+        },
+        {
+          "name": "dessert",
+          "number": 5
+        }
+      ],
       "image": "/images/download.jpeg",
       "persons": 5
     }

@@ -9,9 +9,9 @@ const Navbar = () => {
   const cartCount = items.length;
 
   return (
-    <>
-      <header className="fixed w-full bg-transparent backdrop-blur-sm z-50">
-        <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="w-full z-50 fixed flex justify-center p-2">
+      <header className=" w-5/6 mx-auto rounded-full bg-black/20 backdrop-blur-sm ">
+        <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="text-2xl font-playfair font-bold text-white">
             Iftar Delivery
           </div>
@@ -20,13 +20,11 @@ const Navbar = () => {
               className="relative cursor-pointer"
               onClick={() => setIsCartOpen(true)}
             >
-              <span className="absolute -top-2 -right-2 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                <CartIcon></CartIcon>
+              <span className="absolute -top-[0.26rem] -right-2  text-yellow-500 font-bold bg-white border-green-600 border-[2px] p-2 rounded-full h-5 w-5 flex items-center justify-center">
                 {cartCount}
               </span>
             </div>
-            <button className="bg-white/20 text-white px-6 py-2 rounded-full hover:bg-white/30 transition-colors backdrop-blur-sm">
-              Order Now
-            </button>
           </div>
         </nav>
       </header>
@@ -34,8 +32,33 @@ const Navbar = () => {
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
       />
-    </>
+    </div>
   );
 };
+function CartIcon() {
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 122.88 119.43"
+      className="w-7 h-7 fill-current text-white hover:text-yellow-500 transition duration-300"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M10.38,0H112.5c1.1,0,1.91,0.9,1.99,1.99l8.38,115.46c0.08,1.08-0.9,1.99-1.99,1.99H1.99 
+        c-1.08,0-2.07-0.89-1.99-1.99L8.38,1.99C8.46,0.89,9.28,0,10.38,0L10.38,0z M33.18,23.77V39.1v0.01h-0.01 
+        c0,7.44,3.06,14.21,7.96,19.12c4.91,4.91,11.68,7.97,19.11,7.97v-0.01h0.03l0,0h0.02v0.01c7.44,0,14.21-3.05,19.12-7.96 
+        c4.91-4.91,7.96-11.68,7.97-19.11h-0.02V39.1V23.59c-3.3-1.08-5.68-4.18-5.68-7.84c0-4.56,3.69-8.26,8.25-8.26 
+        c4.56,0,8.25,3.7,8.25,8.26c0,2.95-1.56,5.55-3.89,7.01V39.1v0.03h-0.01c-0.01,9.34-3.83,17.84-9.97,23.98 
+        c-6.16,6.16-14.67,9.99-24.02,10v0.02h-0.02l0,0h-0.03v-0.02c-9.34-0.01-17.83-3.83-23.99-9.97c-6.16-6.16-9.99-14.67-10-24.02 
+        h-0.01V39.1V22.33c-1.99-1.51-3.28-3.89-3.28-6.58c0-4.56,3.7-8.26,8.26-8.26c4.56,0,8.25,3.7,8.25,8.26 
+        C39.49,19.64,36.8,22.89,33.18,23.77L33.18,23.77z"
+      />
+    </svg>
+  );
+}
 
 export default Navbar;

@@ -26,7 +26,7 @@ const ProductGrid = () => {
   );
 
   return (
-    <section className="py-16 bg-[#1a472a]/10">
+    <section className="py-16 bg-[#CECE5A]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Filters Sidebar */}

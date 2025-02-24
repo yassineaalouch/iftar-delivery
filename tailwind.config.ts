@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        merienda: ["Merienda", "cursive"],
+        roboto: ["Roboto", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
