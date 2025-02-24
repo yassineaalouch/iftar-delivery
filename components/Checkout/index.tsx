@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useCartStore } from '@/store/useCartStore';
 import LoadingSpinner from '../LoadingSpinner';
-import { deliverySlots } from '@/data/deliverySlots';
-import { getDeliveryFee, isOrderingAllowed } from '@/utils/timeUtils';
+import { getDeliveryFee, isOrderForTomorrow } from '@/utils/timeUtils';
 import Toast from '../Toast';
 import CountdownTimer from '../CountdownTimer';
+import LocationInput from '../LocationInput';
+import { getDeliverySlots } from '@/utils/prayerTimes';
 
 interface CustomerInfo {
   name: string;
@@ -27,6 +28,19 @@ const Checkout = () => {
     address: '',
     deliverySlot: ''
   });
+  const [deliverySlots, setDeliverySlots] = useState<Array<{
+    id: string;
+    time: string;
+    label: string;
+  }>>([]);
+
+  useEffect(() => {
+    const fetchDeliverySlots = async () => {
+      const slots = await getDeliverySlots();
+      setDeliverySlots(slots);
+    };
+    fetchDeliverySlots();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,17 +48,11 @@ const Checkout = () => {
     setError(null);
 
     const now = new Date();
-    if (!isOrderingAllowed(now)) {
-      setError('Orders are currently closed. Please order between 8 AM and 3 PM.');
-      setIsLoading(false);
-      return;
-    }
-
-    const deliveryFee = getDeliveryFee(now);
-    if (deliveryFee === null) {
-      setError('Invalid ordering time');
-      setIsLoading(false);
-      return;
+    const isForTomorrow = isOrderForTomorrow(now);
+    const orderDate = new Date();
+    
+    if (isForTomorrow) {
+      orderDate.setDate(orderDate.getDate() + 1);
     }
 
     try {
@@ -54,9 +62,10 @@ const Checkout = () => {
         body: JSON.stringify({
           customerInfo,
           items,
-          totalPrice: totalPrice + deliveryFee,
-          deliveryFee,
-          orderDate: new Date().toISOString(),
+          totalPrice: totalPrice + getDeliveryFee(now),
+          deliveryFee: getDeliveryFee(now),
+          orderDate: orderDate.toISOString(),
+          isForTomorrow: isForTomorrow
         }),
       });
 
@@ -92,6 +101,14 @@ const Checkout = () => {
         <h1 className="text-3xl font-playfair font-bold text-[#1a472a] text-center mb-8">
           Checkout
         </h1>
+
+        {isOrderForTomorrow(new Date()) && (
+          <div className="mb-6 bg-amber-50 border border-amber-200 rounded-lg p-4 text-amber-800">
+            <p className="text-center">
+              Note: Orders placed now will be delivered tomorrow during your selected time slot
+            </p>
+          </div>
+        )}
 
         <div className="mb-6">
           <CountdownTimer startHour={8} endHour={15} />
@@ -167,8 +184,12 @@ const Checkout = () => {
 
               <div className="space-y-3">
                 <label className="block text-[#1a472a] font-medium">Select Delivery Time</label>
-                <div className="grid grid-cols-3 gap-4">
-                  {deliverySlots.map((slot) => (
+                {deliverySlots.map((slot) => (
+                  slot.id === 'notice' ? (
+                    <div key={slot.id} className="text-amber-600 text-sm mb-2">
+                      {slot.label}
+                    </div>
+                  ) : (
                     <button
                       key={slot.id}
                       type="button"
@@ -180,33 +201,19 @@ const Checkout = () => {
                         }`}
                     >
                       <span className="block text-lg font-medium">{slot.label}</span>
-                      <span className="block text-sm text-gray-500 mt-1">Today</span>
                     </button>
-                  ))}
-                </div>
-                {!customerInfo.deliverySlot && (
+                  )
+                ))}
+                {!customerInfo.deliverySlot && deliverySlots.some(slot => slot.id !== 'notice') && (
                   <p className="text-sm text-amber-600">Please select a delivery time</p>
                 )}
               </div>
 
-              <div className="md:col-span-2">
-                <label className="flex gap-2 text-sm font-medium text-gray-700 mb-1">
-                  <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  Delivery Address
-                </label>
-                <textarea
-                  required
+              <div>
+                <label className="block text-sm font-medium mb-1">Address</label>
+                <LocationInput
                   value={customerInfo.address}
-                  onChange={(e) => setCustomerInfo({ ...customerInfo, address: e.target.value })}
-                  className="w-full px-4 py-2 rounded-xl border focus:ring-2 focus:ring-[#1a472a]/20 
-                           focus:border-[#1a472a] outline-none transition-all"
-                  rows={3}
-                  placeholder="Enter your delivery address"
+                  onChange={(address) => setCustomerInfo({ ...customerInfo, address })}
                 />
               </div>
             </div>
@@ -219,11 +226,11 @@ const Checkout = () => {
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Delivery Fee:</span>
-                  <span>${(getDeliveryFee(new Date()) || 0).toFixed(2)}</span>
+                  <span>${getDeliveryFee(new Date()).toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-lg font-medium text-[#1a472a] pt-2 border-t">
                   <span>Total Amount:</span>
-                  <span>${(totalPrice + (getDeliveryFee(new Date()) || 0)).toFixed(2)}</span>
+                  <span>${(totalPrice + getDeliveryFee(new Date())).toFixed(2)}</span>
                 </div>
               </div>
 
@@ -257,20 +264,15 @@ const Checkout = () => {
 
         <div className="mt-6 bg-white rounded-xl p-4 border border-gray-200">
           <h3 className="text-lg font-medium text-[#1a472a] mb-2">
-            Delivery Fee Information
+            Delivery Information
           </h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li className="flex items-center gap-2">
-              <span className="w-32">8 AM - 1 PM:</span>
-              <span className="font-medium">10 MAD</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="w-32">1 PM - 3 PM:</span>
+              <span className="w-32">Delivery Fee:</span>
               <span className="font-medium">15 MAD</span>
             </li>
-            <li className="flex items-center gap-2 text-amber-600">
-              <span className="w-32">After 3 PM:</span>
-              <span className="font-medium">Orders Closed</span>
+            <li className="text-sm text-gray-500">
+              * Orders placed after 8 PM will be delivered the next day
             </li>
           </ul>
         </div>
