@@ -1122,6 +1122,68 @@
       "totalPrice": 9,
       "orderDate": "2025-02-22T21:05:26.113Z",
       "status": "pending"
+    },
+    {
+      "id": "order_1740440643637",
+      "customerInfo": {
+        "name": "choaib saifeddine",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliverySlot": "17:23"
+      },
+      "items": [
+        {
+          "id": "prod_4",
+          "name": "Beghrir",
+          "price": 2,
+          "image": "/images/products/beghrir.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "prod_5",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 18,
+      "deliveryFee": 15,
+      "orderDate": "2025-02-25T23:44:02.007Z",
+      "isForTomorrow": true,
+      "status": "processing"
+    },
+    {
+      "id": "order_1740440846858",
+      "customerInfo": {
+        "name": "meryem hallo",
+        "email": "soundoussaadeddine16@gmail.com",
+        "phone": "0612711750",
+        "address": "derb foukara rue 30 n 113 casablanca",
+        "deliverySlot": "16:23"
+      },
+      "items": [
+        {
+          "id": "prod_5",
+          "name": "Chebakia",
+          "price": 1,
+          "image": "/images/products/chebakia.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "prod_2",
+          "name": "Hrira",
+          "price": 3,
+          "image": "/images/products/hrira.jpeg",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 19,
+      "deliveryFee": 15,
+      "orderDate": "2025-02-25T23:47:26.543Z",
+      "isForTomorrow": true,
+      "status": "pending"
     }
   ]
 }
