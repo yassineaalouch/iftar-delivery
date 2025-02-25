@@ -1,8 +1,10 @@
+// Import necessary dependencies
 import { useState } from 'react';
 import Image from 'next/image';
 import { useCartStore } from '@/store/useCartStore';
 import { useRouter } from 'next/router';
 
+// Define interfaces for type safety
 interface Option {
   id: string;
   name: string;
@@ -26,6 +28,7 @@ interface PackagePopupProps {
   packageInfo: { id: string; persons: number } | null;
 }
 
+// Define available package options with categories and items
 const packageOptions: Category[] = [
   {
     name: 'Drinks',
@@ -35,7 +38,7 @@ const packageOptions: Category[] = [
     ]
   },
   {
-    name: 'Soup',
+    name: 'Soup', 
     options: [
       { id: 'hrira', name: 'Hrira', price: 3, image: '/images/products/hrira.jpeg' },
       { id: 'hsoua', name: 'Hsoua', price: 3, image: '/images/products/hsoua.jpeg' }
@@ -58,12 +61,15 @@ const packageOptions: Category[] = [
 ];
 
 const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
+  // Initialize hooks and state
   const { addPackage } = useCartStore();
   const router = useRouter();
   const [selections, setSelections] = useState<Record<string, Selection[]>>({});
 
+  // Handle selecting an item from a category
   const handleSelect = (category: string, option: Option) => {
     if (packageInfo?.persons === 1) {
+      // For single person package, replace existing selection
       setSelections(prev => ({
         ...prev,
         [category]: [{ option, quantity: 1 }]
@@ -71,12 +77,14 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
       return;
     }
     
+    // For multi-person package, add to existing selections
     setSelections(prev => ({
       ...prev,
       [category]: [...(prev[category] || []), { option, quantity: 1 }]
     }));
   };
 
+  // Update quantity of selected item
   const updateQuantity = (category: string, optionId: string, delta: number) => {
     setSelections(prev => {
       const categorySelections = prev[category] || [];
@@ -86,6 +94,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
       
       const updatedSelections = categorySelections.map(sel => {
         if (sel.option.id === optionId) {
+          // Ensure quantity stays within valid range
           const newQuantity = Math.max(1, Math.min(
             sel.quantity + delta,
             (packageInfo?.persons || 1) - totalQuantity
@@ -102,6 +111,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     });
   };
 
+  // Remove an item from selections
   const removeSelection = (category: string, optionId: string) => {
     setSelections(prev => ({
       ...prev,
@@ -109,6 +119,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     }));
   };
 
+  // Helper functions for calculations and checks
   const getCategoryTotal = (category: string) => {
     return (selections[category] || []).reduce((sum, sel) => sum + sel.quantity, 0);
   };
@@ -118,6 +129,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     return total < (packageInfo?.persons || 1);
   };
 
+  // Cart and checkout handling
   const handleAddToCart = () => {
     const packageItems = Object.values(selections).flat().map(({ option, quantity }) => ({
       id: option.id,
@@ -127,7 +139,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
       quantity
     }));
     
-    const packagePrice = packageInfo?.persons ? packageInfo.persons * 8 : 8; // Base package price
+    const packagePrice = packageInfo?.persons ? packageInfo.persons * 8 : 8;
     const packageName = `${packageInfo?.persons || 1} Person Package`;
     
     addPackage(packageItems, packagePrice, packageName);
@@ -141,9 +153,9 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
 
   const handleContinueShopping = () => {
     handleAddToCart();
-    // The user can continue shopping from the current page
   };
 
+  // Package completion checks
   const isComplete = packageOptions.every(category => {
     const categoryTotal = getCategoryTotal(category.name);
     return categoryTotal === (packageInfo?.persons || 1);
@@ -158,6 +170,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     return remaining;
   };
 
+  // Progress calculation
   const getProgressPercentage = () => {
     const totalRequired = packageOptions.length * (packageInfo?.persons || 1);
     const totalSelected = packageOptions.reduce((sum, category) => 
@@ -165,8 +178,8 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     );
     return (totalSelected / totalRequired) * 100;
   };
-  console.log(getProgressPercentage());
 
+  // Summary and price calculations
   const getSelectionSummary = () => {
     return packageOptions.map(category => ({
       name: category.name,
@@ -187,20 +200,23 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
     return selections[category]?.some(sel => sel.option.id === optionId) || false;
   };
 
+  // Don't render if popup is not open
   if (!isOpen) return null;
 
+  // Render popup UI
   return (
     <>
-      {/* Overlay */}
+      {/* Background overlay */}
       <div 
-        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
+        className="fixed max-h-screen inset-0 bg-black/50 backdrop-blur-sm z-50"
         onClick={onClose}
       />
 
-      {/* Popup */}
+      {/* Main popup container */}
       <div className="fixed inset-0 z-50 overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4">
           <div className="relative bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl">
+            {/* Close button */}
             <button
               onClick={onClose}
               className="absolute right-4 top-4 text-gray-400 hover:text-gray-500"
@@ -214,7 +230,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
               Customize Your Package
             </h2>
 
-            {/* Progress Bar with Segments */}
+            {/* Progress bar showing completion status for each category */}
             <div className="mb-6 space-y-1">
               <div className="flex justify-between text-xs text-gray-500">
                 {packageOptions.map(category => (
@@ -243,6 +259,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
               </div>
             </div>
 
+            {/* Category sections */}
             <div className="space-y-8">
               {packageOptions.map((category) => (
                 <div key={category.name} className="border-b pb-6">
@@ -281,7 +298,6 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                               src={option.image}
                               alt={option.name}
                               fill
-                              
                               className="object-cover rounded-lg"
                             />
                           </div>
@@ -290,6 +306,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                             <p className="text-sm text-gray-500">${option.price.toFixed(2)}</p>
                           </div>
                           {packageInfo?.persons === 1 ? (
+                            // Single selection mode
                             <button
                               onClick={() => {
                                 if (isSelected) {
@@ -311,6 +328,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                               {isSelected ? 'Selected' : 'Select'}
                             </button>
                           ) : (
+                            // Multiple selection mode
                             isSelected ? (
                               <div className="flex items-center gap-2">
                                 <button
@@ -355,8 +373,9 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
               ))}
             </div>
 
+            {/* Summary and action buttons */}
             <div className="mt-8 pt-6 border-t space-y-4">
-              {/* Selection Summary with Animation and Price */}
+              {/* Show summary when package is complete */}
               {isComplete && (
                 <div 
                   className="bg-[#1a472a]/5 rounded-xl p-4 mb-4 
@@ -396,6 +415,7 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                 </div>
               )}
 
+              {/* Progress indicator */}
               <div className="flex justify-between items-center mb-4">
                 <span className="text-gray-600">Package Progress:</span>
                 <span className="font-medium text-[#1a472a]">
@@ -403,6 +423,8 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                   of {packageOptions.length} categories complete
                 </span>
               </div>
+
+              {/* Action buttons */}
               <div className="flex flex-col gap-3">
                 <button
                   onClick={handleProceedToCheckout}
@@ -432,6 +454,8 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                     : `${getRemainingSelections()} Items Remaining`}
                 </button>
               </div>
+
+              {/* Validation messages */}
               {!isComplete && (
                 <div className="space-y-2">
                   <p className="text-sm text-center text-gray-500">
@@ -439,7 +463,6 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
                       ? 'Please review your selections'
                       : `Please select ${getRemainingSelections()} more items to complete your package`}
                   </p>
-                  {/* Validation Messages */}
                   {getSelectionSummary()
                     .filter(({ isComplete, selections }) => !isComplete || selections.length === 0)
                     .map(({ name, selections, required }) => (
@@ -466,4 +489,4 @@ const PackagePopup = ({ isOpen, onClose, packageInfo }: PackagePopupProps) => {
   );
 };
 
-export default PackagePopup; 
+export default PackagePopup;

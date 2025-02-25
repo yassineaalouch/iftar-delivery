@@ -27,10 +27,10 @@ const MealPackages = () => {
   const packages: Package[] = packagesData.packages;
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl text-center mb-16 text-black font-extrabold">
-          Choose Your Package
+        <h2 className="text-5xl text-center mb-16 font-extrabold">
+          <span className="bg-gradient-to-r from-black to-[#ec8b2a] bg-clip-text text-transparent">Choose Your Package</span>
         </h2>
         <div className="flex justify-center gap-8 max-w-4xl mx-auto">
           {packages.map((pkg) => (
@@ -71,9 +71,9 @@ interface PackageCartProps {
 function PackageCart({pkg, onSelect}: PackageCartProps) {
   return(
   <div 
-  className="bg-white text-black rounded-2xl shadow-xl 
+  className="bg-white text-black w-1/3 shadow-xl 
              transition-all duration-500 hover:shadow-2xl 
-             border-2 border-black/50 group"
+             border-2 border-green-900 group"
 >
   <h3 className="text-2xl border-b-2 my-2 font-extrabold text-center text-black font-playfair">
         {pkg.title}
@@ -87,10 +87,10 @@ function PackageCart({pkg, onSelect}: PackageCartProps) {
         className="object-cover group-hover:scale-110 transition-transform duration-500"
       />
     </div>
-    <div className="absolute top-3 right-3 bg-gradient-to-r from-golden to-[#f3c75f] 
+    <div className="absolute top-3 right-3 bg-gradient-to-r from-golden to-[#ec8b2a] 
                    text-neutral-900 px-4 py-2 rounded-full text-sm font-bold 
                    shadow-[0_4px_10px_rgba(218,159,56,0.3)]
-                   bg-green-400 group-hover:bg-orange-400 transition-color duration-700 border border-white/20
+                   bg-[#78c32a] group-hover:bg-[#ec8b2a] transition-color duration-700 border border-white/20
                    transform group-hover:scale-105 transition-transform
                    hover:shadow-[0_6px_15px_rgba(218,159,56,0.4)]">
       ${pkg.price}
@@ -101,18 +101,18 @@ function PackageCart({pkg, onSelect}: PackageCartProps) {
         {pkg.description}
       </p>
       <div className="flex my-3 font-light justify-center">
-      <div className="grid border border-black/20 rounded-xl p-2 grid-cols-4 gap-2">
-        {pkg.elements.map((element) => (
-          <div className='flex flex-col items-center justify-center'  key={element.name}>
-            <div className="text-sm font-bold">
-                {element.name}
+        <div className="grid border border-black/20 text-xs rounded-xl p-2 grid-cols-4 gap-2">
+          {pkg.elements.map((element) => (
+            <div className='flex flex-col items-center justify-center'  key={element.name}>
+              <div className="">
+                  {element.name}
+              </div>
+              <div className="">
+                  ({element.number})
+              </div>
             </div>
-            <div className="text-sm">
-                ({element.number})
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
   </div>
   <div className='flex px-4 pb-2 justify-center'>
@@ -124,7 +124,7 @@ function PackageCart({pkg, onSelect}: PackageCartProps) {
           persons: pkg.persons
         });
       }}
-      className="w-full bg-[#1a472a] text-white py-3 rounded-xl
+      className="w-full bg-[#78c32a] text-white py-3 rounded-xl
                 font-bold tracking-wide
                 transition-all duration-300
                 relative overflow-hidden

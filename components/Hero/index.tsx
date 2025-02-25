@@ -4,20 +4,21 @@ const Hero = () => {
   return (
     <>
         {/* <div className='w-full flex h-screen bg-gradient-to-l from-[#c5ec6f] to-white  '> */}
-        <div className='w-full flex h-[90vh] bg-[#c5ec6f]  '>
-          <div className='w-1/2 h-full pl-10 flex flex-col justify-center items-end'>
-              <div className='font-[900] text-5xl text-[#FD8D14]'>Un Iftar délicieux, sans effort et à votre porte en un instant !</div>
-              <div className='text-black '>Gagnez du temps, profitez du goût – Iftar-Delivery s’occupe du reste !</div>
+        {/* <div className='w-full flex h-[90vh] bg-[#c5ec6f] bg-white '> */}
+        <div className='w-full flex h-[90vh] bg-white '>
+          <div className='w-2/5 h-full pl-10  gap-3 flex flex-col justify-center items-end'>
+              <div className='font-[900] text-5xl text-[#ec8b2a]'>Un Iftar délicieux, sans effort et à votre porte en un instant !</div>
+              <div className='text-black w-full '>Gagnez du temps, profitez du goût <br/> Iftar-Delivery s’occupe du reste !</div>
           </div>
-          <div className='w-1/2 h-full pt-5 relative flex justify-center items-center'>
-            <div className='w-full flex justify-center items-end'>
-              <div className='w-3/4'>
-               <Image className=' rounded-full' alt='mm' src="/images/hero/IftarHero.jpg" width={400} height={400} layout="responsive" loading='lazy'/>
-              </div>
+          <div className='w-3/5 h-full pt-5 relative flex justify-center items-center'>
+            {/* <div className='w-full flex justify-center items-end'>
+              <div className='w-3/4'> */}
+               <Image alt='food' src="/images/allInOne.jpg" width={600} height={600} layout="responsive" loading='lazy'/>
+              {/* </div>
             </div>
-              <Image className=' rounded-full absolute bottom-[20rem] left-0 h-28 w-28' alt='mm' src="/images/hero/IftarHero.jpg" width={100} height={100} loading='lazy'/>
-              <Image className=' rounded-full absolute bottom-40 -left-10 h-28 w-28' alt='mm' src="/images/hero/IftarHero.jpg" width={100} height={100} loading='lazy'/>
-              <Image className=' rounded-full absolute bottom-0 left-10 h-28 w-28' alt='mm' src="/images/hero/IftarHero.jpg" width={100} height={100} loading='lazy'/>
+              <Image className=' rounded-full object-contain absolute bottom-[20rem] left-0 h-28 w-auto' alt='mm' src="/images/hero/IftarHero.jpg" width={100} height={100} loading='lazy'/>
+              <Image className=' rounded-full object-contain absolute bottom-40 -left-10 h-28 w-auto' alt='mm' src="/images/products/atay.jpg" width={100} height={100} loading='lazy'/>
+              <Image className=' rounded-full object-contain absolute bottom-0 left-10 h-28 w-auto' alt='mm' src="/images/products/melwi.jpg" width={100} height={100} loading='lazy'/> */}
           </div>
         </div>
     </>

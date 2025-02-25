@@ -30,12 +30,6 @@ const Home: NextPage = () => {
         <Categories />
         <ProductGrid />
         {isPopupOpen && <Popup onClose={handleClosePopup} />}
-        {/* <button 
-        onClick={() => setIsPopupOpen(true)} // Open the popup when clicked
-        className="bg-blue-500 text-white px-4 py-2 rounded"
-      >
-        Open Popup
-      </button> */}
       </main>
     </>
   );
